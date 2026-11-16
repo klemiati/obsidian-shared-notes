@@ -30,7 +30,7 @@
 <meta name="twitter:image" content="https://share.cmdspace.work/assets/og/og-share.png">
 
 <script>
-(function(){try{var f='';if(f){document.documentElement.dataset.theme=f;return;}var t=localStorage.getItem('cmds-theme');if(t){document.documentElement.dataset.theme=t;}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.dataset.theme='dark';}else{document.documentElement.dataset.theme='light';}}catch(e){}})();
+(function(){try{var f='dark';if(f){document.documentElement.dataset.theme=f;return;}var t=localStorage.getItem('cmds-theme');if(t){document.documentElement.dataset.theme=t;}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.dataset.theme='dark';}else{document.documentElement.dataset.theme='light';}}catch(e){}})();
 </script>
 
 <style>
@@ -595,7 +595,7 @@ body.cmds-layout-wide main { padding-top: 3.5rem; }
 
 
 <div class="side-tools">
-	<button class="tool-btn" id="themeToggle" aria-label="Toggle theme">
+	<button class="tool-btn" id="themeToggle" aria-label="Toggle theme" hidden>
 		<svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
 	</button>
 	<button class="tool-btn" id="tocToggle" aria-label="Table of contents" hidden>
